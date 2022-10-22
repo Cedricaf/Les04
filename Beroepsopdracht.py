@@ -3,8 +3,8 @@ import time
 
 while True:
     print("Je gaat een keuzeverhaal spelen.\nIn het verhaal kan je keuzes maken die het einde beïnvloeden.")
-    answer = input("Wil je beginnen? (Ja/Ja) ")
-    if answer == "Ja" or "ja":
+    answer = input("Wil je beginnen? (Y/y) ")
+    if answer == "Y" or "y":
         time.sleep(1)
         answer = input("========================================================================\nJe bent bezig met het inpakken van je kleding in je hotelkamer.\nJe gaat op reis met het vliegtuig naar nederland waar er geen oorlog is.\nPlotseling hoor je voetstappen op de trap en besef je dat het de politie is die je zoekt.\nJe besluit om...\nA. Te verstoppen in de kast.\nB. Doorblijven gaan met inpakken.\nC. Jezelf te vermommen.")
         if answer == "A":
@@ -17,13 +17,31 @@ while True:
             break
         elif answer == "C":
             time.sleep(1)
-            answer = input("========================================================================\nJe vermomd je zo snel mogelijk en omdat jij een filmacteur was, werkt jouw vermomming zo goed dat de politie je niet herkend en weer vertrekt.\nJe pakt je spullen en gaat naar het vliegveld.\nDaar aangekomen zie je dat er politie staat bij de duane\nJe besluit om…\nA. Op de vermomming te rekenen. Dus niks en normaal gedragen.\nB. Proberen om te duane te ontwijken.")
+            answer = input("========================================================================\nJe vermomd je zo snel mogelijk en omdat jij een filmacteur was, werkt jouw vermomming zo goed dat de politie je niet herkend en weer vertrekt.\nJe pakt je spullen en gaat naar het vliegveld.\nDaar aangekomen zie je dat er politie staat bij de duane.\nJe besluit om…\nA. Op de vermomming te rekenen. Dus niks en normaal gedragen.\nB. Proberen om te duane te ontwijken.")
             if answer == "A":
                 time.sleep(1)
                 answer = input("========================================================================\nJe denkt dat de vermomming goed werkt en je komt zonder problemen door de duane.\nNa 3uur wachten, vertrekt jouw vliegtuig naar Schiphol.\nAangekomen in schiphol kom je langs een café en je neemt…\nA.Niks.\nB. Koffie.\nThee.")
                 if answer == "A":
                     time.sleep(1)
-                    answer = input("========================================================================\n")
+                    answer = input("========================================================================\nJe neemt niks en je loopt verder.\nBij de uitgang wordt je verwelkomt door een vriend die in nederland woont en hij verteld dat je tijdelijk bij hem mag komen wonen.\nJullie besluiten om naar de nieuwe star wars film te gaan\nJe neemt…\nA. de bus.\nB. een Taxi.")
+                    if answer == "A":
+                        time.sleep(1)
+                        answer = input("========================================================================\n")
+                        if answer == "A":
+                            time.sleep(1)
+                            answer = input("========================================================================\n")
+                        elif answer == "B":
+                            time.sleep(1)
+                            answer = input("========================================================================\n")
+                        else:
+                            print("Dt is geen optie!")
+                            break
+                    elif answer == "B":
+                        time.sleep(1)
+                        answer = input("========================================================================\n")
+                    else:
+                        print("Dt is geen optie!")
+                        break
                 elif answer == "B":
                     time.sleep(1)
                     answer == input("========================================================================\n")
@@ -42,5 +60,7 @@ while True:
             print("Dat is geen optie!")
             break
     else:
-        print("je moet het goede intypen!")
+        print("Dat is geen optie!")
         break
+
+
