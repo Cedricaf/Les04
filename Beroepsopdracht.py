@@ -36,7 +36,7 @@ while True:
             if answer == "A":
                 time.sleep(1)
                 lines()
-                answer = input("Je denkt dat de vermomming goed werkt en je komt zonder problemen door de duane.\nNa 3uur wachten, vertrekt jouw vliegtuig naar Schiphol.\nAangekomen in schiphol kom je langs een café en je neemt…\nA.Niks.\nB. Koffie.\nThee.")
+                answer = input("Je denkt dat de vermomming goed werkt en je komt zonder problemen door de duane.\nNa 3uur wachten, vertrekt jouw vliegtuig naar Schiphol.\nAangekomen in schiphol kom je langs een café en je neemt…\nA. Niks.\nB. Koffie.\nC. Thee.")
                 if answer == "A":
                     time.sleep(1)
                     lines()
