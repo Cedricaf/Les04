@@ -57,6 +57,7 @@ while True:
                                     time.sleep(1)
                                     lines()
 
+
                                 elif answer == "B":
                                     time.sleep(1)
                                     lines()
@@ -128,15 +129,45 @@ while True:
                             answer = input("Je besluit om nog rond te gaan hangen op de dam waar straatartisten optreden.\nJe geeft de straatartiest…\nA. 10 euro.\nB. niks.")
                             if answer == "A":
                                 time.sleep(1)
+                                lines()
+
                         elif answer == "B":
                             time.sleep(1)
+                            lines()
+                            answer = input("Je besluit om nog rond te gaan hangen op de dam waar straatartisten optreden.\nJe geeft de straatartiest…\nA. 10 euro.\nB. niks.")
+
+
+
 
                     elif answer == "B":
                         time.sleep(1)
                         lines()
                         answer = input("Je neemt de tortilla chips en na de film besluit je om…\nA. naar de dam te gaan.\nB. nog even boodschappen te doen.")
                         if answer == "A":
-                            time.sleep()
+                            time.sleep(1)
+                            lines()
+                            answer = input("Je besluit om nog rond te gaan hangen op de dam waar straatartisten optreden.\nJe geeft de straatartiest…\nA. 10 euro.\nB. niks.")
+                            if answer == "A":
+                                time.sleep(1)
+                                lines()
+                                answer = input("De straatartiest zegt: “Thank you” en jij besluit om na het optreden…\nA. naar huis te gaan.\nB. naar de mcdonalds te gaan.")
+                            elif answer == "B":
+                                time.sleep(1)
+                                lines()
+                                answer == input("Je wordt raar aangekeken en je besluit om…\nA. 10 euro te geven.\nB. naar huis te gaan.")
+                                if answer == "A":
+                                    time.sleep(1)
+                                    lines()
+                                elif answer == "B":
+                                    time.sleep(1)
+                                    lines()
+                                    print("Eindelijk kom je thuis en je vindt het tijd om te gaan slapen.\nJe hebt de reis overleefd!\nGoed gedaan!")
+                                    time.sleep(1)
+                                    break
+                        elif answer == "B":
+                            time.sleep(1)
+                            lines()
+                            answer == input("")
                 elif answer == "C":
                     time.sleep(1)
                     lines()
