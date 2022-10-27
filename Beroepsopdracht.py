@@ -55,10 +55,11 @@ while True:
                                 answer = input("Je besluit om nog rond te gaan hangen op de dam waar straatartisten optreden.\nJe geeft de straatartiest…\nA. 10 euro.\nB. niks.")
                                 if answer == "A":
                                     time.sleep(1)
+                                    lines()
 
                                 elif answer == "B":
                                     time.sleep(1)
-                                
+                                    lines()
                             elif answer == "B":
                                 time.sleep(1)
                         elif answer == "B":
@@ -69,6 +70,24 @@ while True:
                                 time.sleep(1)
                                 lines()
                                 answer = input("")
+                            elif answer == "B":
+                                time.sleep(1)
+                                lines()
+                                answer = input("Je besluit om boodschappen te doen en je komt bij de diepvries afdeling.\nJe neemt…\nA. Lasagna.\nB. Vis.")
+                                if answer == "A":
+                                    time.sleep(1)
+                                    lines()
+                                    print("Je neemt de lasanga en warmt deze thuis op.\nUiteindelijk val je in slaap op de bank.\nJe hebt de reis overleeft!\nGoed gedaan!")
+                                    time.sleep(1)
+                                    break
+                                elif answer == "B":
+                                    time.sleep(1)
+                                    lines()
+                                    print("Eindelijk kom je thuis en je vindt het tijd om te gaan slapen.\nJe hebt de reis overleefd!\nGoed gedaan!")
+                                    break
+                                else:
+                                    error()
+                                    break
                         else:
                             error()
                             break
